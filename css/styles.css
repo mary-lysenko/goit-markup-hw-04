@@ -216,13 +216,32 @@ img {
   width: calc((100% - 24px * 3) / 4);
 }
 
+.benefits-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color:#f4f4fd;;
+}
+
+.benefits-icons {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .benefits-title-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 8px;
   margin-bottom: 8px;
+
 }
 
 .benefits-text {
@@ -294,6 +313,41 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.social-icons-container {
+display: flex;
+align-items: center;
+padding: 0 16px;
+}
+
+.social-icons-list {
+display: flex;
+flex-direction: row;
+gap: 24px;
+justify-content: center;
+margin: 0 auto;
+}
+
+.social-icons-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-icons-link:hover {
+  background-color: #404bbf;
+}
+
+
+.social-icons {
+  fill: #f4f4fd;
+  color: #fff;
 }
   
    /* ------------------PORTFOLIO---------------------- */
