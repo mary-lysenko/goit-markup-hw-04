@@ -66,6 +66,7 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -76,7 +77,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .nav-link.current {
@@ -112,6 +113,7 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link {
@@ -121,14 +123,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
   /* ------------------HERO---------------------- */
 
 .hero-page {
-  width: 1440px;
+  max-width: 1440px;
   background: #2e2f42;
   background-image: linear-gradient(
     rgba(46, 47, 66, 0.7), 
@@ -138,6 +139,8 @@ img {
   align-items: center;
   background-repeat: no-repeat;
   padding: 188px 0;
+  background-position: center;
+  background-size: cover;
 
 }
 
@@ -222,7 +225,8 @@ img {
   border-radius: 4px;
   width: 264px;
   height: 112px;
-  background-color:#f4f4fd;;
+  background-color:#f4f4fd;
+  margin-bottom: 8px;
 }
 
 .benefits-icons {
@@ -237,7 +241,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -313,11 +316,6 @@ img {
   margin-bottom: 8px;
 }
 
-.social-icons-container {
-display: flex;
-align-items: center;
-padding: 0 16px;
-}
 
 .social-icons-list {
 display: flex;
@@ -373,6 +371,7 @@ margin: 0 auto;
   justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
@@ -403,6 +402,8 @@ margin: 0 auto;
   position: absolute;
   background-color: #4d5ae5;
   color:#f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 40px 32px;
   top: 0;
   height: 100%;
@@ -444,8 +445,7 @@ margin: 0 auto;
 
 .footer-container {
   display: flex;
-  align-items: center;
-  align-items: flex-start;
+  align-items: baseline
 }
 
 .footer-info {
@@ -486,14 +486,16 @@ margin: 0 auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icons .social-icons-link:hover {
+.footer-icons .social-icons-link:hover, 
+.footer-icons .social-icons-link:focus {
   background-color:#31d0aa;
 }
 
 .footer-icons-text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
