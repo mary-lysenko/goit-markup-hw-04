@@ -66,7 +66,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -83,6 +82,7 @@ img {
 
 .nav-link.current {
   position: relative; 
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link.current::after {
@@ -114,7 +114,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link {
@@ -322,16 +321,15 @@ img {
 .social-icons-list {
 display: flex;
 flex-direction: row;
-
 justify-content: center;
 margin: 0 auto;
+gap: 24px;
 }
 
 .social-icons-link{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -375,7 +373,6 @@ margin: 0 auto;
   justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
@@ -383,10 +380,13 @@ margin: 0 auto;
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 1px 6px rgba(46, 47, 66, 0.08);
-  
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item:hover .portfolio-cover-text {
@@ -478,11 +478,6 @@ margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-
-.social-icons-list {
-  display: flex;
-  gap: 16px;
 }
 
 .footer-icons .social-icons-list {
